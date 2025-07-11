@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head><title>Products</title></head>
+<body>
+  <h2>Available Products</h2>
+  <ul>
+    {% for product in products %}
+      <li>
+        {{ product.name }} - Rs.{{ product.price }}
+        [<a href="{{ url_for('select', product_id=product.id) }}">Select</a>]
+      </li>
+    {% endfor %}
+  </ul>
+</body>
+</html>
