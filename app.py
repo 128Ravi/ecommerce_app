@@ -560,7 +560,7 @@ with app.app_context():
     if not Product.query.first():
         products = [
             Product(name="Laptop", price=65000, category="electronics"),
-            Product(name="Mobile", price=25000, category="electronics"),
+            Product(name="Mobile", price=35000, category="electronics"),
             Product(name="Headphones", price=3000, category="electronics"),
             Product(name="T-Shirt", price=999, category="clothes"),
             Product(name="Jeans", price=1999, category="clothes"),
