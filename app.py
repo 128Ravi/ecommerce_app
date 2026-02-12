@@ -559,7 +559,7 @@ with app.app_context():
     # Insert products only if empty
     if not Product.query.first():
         products = [
-            Product(name="Laptop", price=95000, category="electronics"),
+            Product(name="Laptop", price=65000, category="electronics"),
             Product(name="Mobile", price=25000, category="electronics"),
             Product(name="Headphones", price=3000, category="electronics"),
             Product(name="T-Shirt", price=999, category="clothes"),
